@@ -1,0 +1,106 @@
+
+#search {
+    float: right;
+}
+
+#encabezado{
+    text-align: center;
+}
+
+.contenedor {
+    float: left;
+}
+
+#container_options{
+    width: 15%;
+    margin-left:7%;
+    margin-right:1%;
+}
+
+.list-group{
+    width: 20%;
+}
+
+.list-group-item{
+    padding:8%;
+    color: black;
+}
+
+.list-group-item a{
+    color: rgb(28, 28, 28);
+}
+
+#container_column{
+    margin-right:7%;
+}
+
+.col{
+    margin-bottom: 1%;
+    background-color: rgba(223, 223, 223, 0.35);
+    text-align: justify;
+}
+
+
+@media (min-width: 991px) {
+    .searchLeft{
+        display: none !important;
+    }
+    .searchRight{
+        display: inline;
+    }
+
+    .list-options{
+        display: none !important;
+    }
+}
+
+.contenedorListadoOpciones{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#contenedorOpciones {
+    width: 60%;
+    display: none;
+    position: absolute;
+    top: 45%; /* Ajusta la distancia desde la parte superior de la barra de navegación */
+    z-index: 1000; 
+}
+
+#navbar {
+    position: relative; /* Asegura que el contenedor de opciones se posicione en relación con la barra de navegación */
+    background-color: #6c757d !important;
+}
+
+
+#navbar a{
+  color: white;
+}
+
+.nav-link{
+    color: white !important;
+}
+
+@media (max-width: 991px) {
+    #container_options{
+        display: none;
+    }
+
+    .searchLeft{
+        display: inline;
+    }
+    .searchRight{
+        display: none !important;
+    }
+
+  
+}
+
+@media (max-width: 769px) {
+    .col{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
